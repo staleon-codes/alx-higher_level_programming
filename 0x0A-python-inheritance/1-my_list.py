@@ -1,21 +1,12 @@
 #!/usr/bin/python3
-"""available attributes"""
+""" This module defines a class Mylist that inherits from 'list'"""
 
 
 class MyList(list):
-    """A custom list class that inherits from the built-in list class."""
+    """ inherits from the list base class and implements
+        sorted printing
+    """
+
     def print_sorted(self):
-        """
-        Print the list elements in sorted order.
-
-        Prints the list in ascending order using the sorted() function.
-
-        Args:
-            None
-
-        Returns:
-            None
-        """
-        my_list = sorted(self)
-        if my_list:
-            print(my_list)
+        """ prints the list sorted in ascending order """
+        print(sorted(self))
