@@ -109,4 +109,3 @@ class Base:
                     row[key] = int(row[key])
                 data.append(row)
         return list(map(lambda obj: cls.create(**obj), data))
-
