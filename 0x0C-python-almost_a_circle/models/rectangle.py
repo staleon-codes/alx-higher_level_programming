@@ -113,6 +113,7 @@ class Rectangle(Base):
         retangle_dict["x"] = self.x
         retangle_dict["y"] = self.y
         return retangle_dict
+
     def __str__(self):
         """string method"""
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} " \
