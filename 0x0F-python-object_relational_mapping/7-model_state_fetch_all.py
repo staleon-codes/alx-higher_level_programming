@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Task 7 this script lists all State objects from the database hbtn_0e_6_usa"""
+"""Task 7 this script lists all State 
+objects from the database hbtn_0e_6_usa"""
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
