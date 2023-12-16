@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Task 0 script to Get all states from  states from the database hbtn_0e_0_usa"""
+"""Task 5 script to take in name of state and list cities
+from  states from the database hbtn_0e_0_usa"""
 import MySQLdb
 from sys import argv
 
