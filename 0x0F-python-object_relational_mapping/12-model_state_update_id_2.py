@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""task 12 script that changes name of State object from the database hbtn_0e_6_usa"""
+"""changes states"""
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
