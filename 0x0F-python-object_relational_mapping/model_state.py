@@ -2,17 +2,17 @@
 """
 Contains State class and Base, an instance of declarative_base()
 """
-from sqlalchemy import Column, Integer, String, MetaData
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
+from model_city import City
 
-mymetadata = MetaData()
-Base = declarative_base(metadata=mymetadata)
+Base = declarative_base()
 
 
 class State(Base):
-    """
-    Class with id and name attributes of each state
-    """
+    """Class representing the states table"""
     __tablename__ = 'states'
-    id = Column(Integer, unique=True, nullable=False, primary_key=True)
+    id = Column(Integer, primary_key=True, nullable=False,
+                autoincrement=True, unique=True)
     name = Column(String(128), nullable=False)
