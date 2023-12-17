@@ -15,3 +15,4 @@ if __name__ == "__main__":
     session = Session()
     query_restult = session.query(State).filter(State.name == argv[4]).first()
     print("Not found" if query_restult is None else query_restult.id)
+    session.close()
